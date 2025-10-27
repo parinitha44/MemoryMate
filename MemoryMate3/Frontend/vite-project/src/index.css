@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+/* Custom Styles for improved accessibility and theme */
+:root {
+  --color-primary: #3b82f6; /* Blue-500 */
+  --color-secondary: #10b981; /* Emerald-500 */
+  --color-accent: #f59e0b; /* Amber-500 */
+  --color-text: #1f2937; /* Gray-800 */
+  --color-background: #f9fafb; /* Gray-50 */
+}
+
+/* Base styles for a clean, accessible look */
+body {
+  font-family: 'Inter', sans-serif; /* Recommended clean font */
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Ensure large, accessible font size */
+.text-base {
+  font-size: 1.1rem;
+}
+
+/* Dark Mode (Example - could be tied to a state/context) */
+.dark body {
+  --color-text: #f3f4f6;
+  --color-background: #111827;
+}
+
+.max-w-7xl {
+  max-width: 80rem; /* Slightly wider for better content display */
+}
